@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes slides {
+    0% {
+        background-image: url(/assets/image/img-1.jpg);
+    }
+
+    25% {
+        background-image: url(/assets/image/img-2.jpg);
+    }
+
+    50% {
+        background-image: url(/assets/image/img-3.jpg);
+    }
+
+    75% {
+        background-image: url(/assets/image/img-4.jpg);
+    }
+
+    100% {
+        background-image: url(/assets/image/img-5.jpg);
+    }
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 10rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 3px black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slides 30s linear infinite;
+}
+
+@media  screen and (max-width: 360px) {
+    .relogio {
+        font-size: 2.5rem;
+    }
+}
